@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Instagram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header Navigation -->
+    <div class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-arrow-left text-gray-800 text-lg cursor-pointer hover:text-gray-600"></i>
+                <span class="font-semibold text-lg text-gray-800" id="username">salwahiira</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-bell text-gray-700 text-lg cursor-pointer hover:text-gray-500"></i>
+                <i class="fas fa-ellipsis-v text-gray-700 text-lg cursor-pointer hover:text-gray-500"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-md mx-auto bg-white min-h-screen">
+        <!-- Profile Header -->
+        <div class="px-4 py-6">
+            <div class="flex items-center justify-between mb-4">
+                <!-- Profile Picture with Story Ring -->
+                <div class="story-ring rounded-full cursor-pointer">
+                    <div class="bg-white rounded-full p-1">
+                        <img src="jahira.jpg" 
+                            alt="Profile" 
+                            class="w-20 h-20 rounded-full object-cover">
+                    </div>
+                </div>
+                
+                <!-- Stats -->
+                <div class="flex space-x-8">
+                    <div class="text-center cursor-pointer hover:opacity-75">
+                        <div class="font-bold text-lg text-gray-900" id="posts-count">3</div>
+                        <div class="text-sm text-gray-500">Postingan</div>
+                    </div>
+                    <div class="text-center cursor-pointer hover:opacity-75">
+                        <div class="font-bold text-lg text-gray-900" id="followers-count">1.3K</div>
+                        <div class="text-sm text-gray-500">Pengikut</div>
+                    </div>
+                    <div class="text-center cursor-pointer hover:opacity-75">
+                        <div class="font-bold text-lg text-gray-900" id="following-count">991</div>
+                        <div class="text-sm text-gray-500">Mengikuti</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Profile Info -->
+            <div class="mb-4">
+                <h2 class="font-semibold text-gray-900">Zahira</h2>
+                <p class="text-gray-600 text-sm mt-1">
+                </p>
+                <a href="https://www.instagram.com/salwahiira/?next=%2F" target="_blank" class="text-blue-600 text-sm font-medium hover:text-blue-800">
+    instagram.com/username
+</a>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex space-x-2 mb-6">
+                <button id="follow-btn" class="flex-1 bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold text-sm hover:bg-blue-600 transition-colors">
+                    Ikuti
+                </button>
+                <button class="flex-1 bg-gray-200 text-gray-800 py-2 px-4 rounded-lg font-semibold text-sm hover:bg-gray-300 transition-colors">
+                    Pesan
+                </button>
+                <button class="bg-gray-200 text-gray-800 py-2 px-3 rounded-lg hover:bg-gray-300 transition-colors">
+                    <i class="fas fa-user-plus text-sm"></i>
+                </button>
+            </div>
+            
+        
+        <!-- Content Tabs -->
+        <div class="border-t border-gray-200">
+            <div class="flex">
+                <button class="flex-1 py-3 flex items-center justify-center border-b-2 border-gray-900 text-gray-900 tab-btn active" data-tab="posts">
+                    <i class="fas fa-th text-lg"></i>
+                </button>
+                <button class="flex-1 py-3 flex items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-gray-700 tab-btn" data-tab="reels">
+                    <i class="fas fa-film text-lg"></i>
+                </button>
+                <button class="flex-1 py-3 flex items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-gray-700 tab-btn" data-tab="saved">
+                    <i class="fas fa-bookmark text-lg"></i>
+                </button>
+                <button class="flex-1 py-3 flex items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-gray-700 tab-btn" data-tab="tagged">
+                    <i class="fas fa-user-tag text-lg"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Posts Grid -->
+        <div id="posts-grid" class="grid grid-cols-3 gap-1 p-0">
+            <!-- Posts will be generated by JavaScript -->
+        </div>
+        
+        <!-- Floating Action Button -->
+        <div class="fixed bottom-6 right-6">
+            <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-full shadow-lg floating-animation hover:shadow-xl transition-shadow">
+                <i class="fas fa-plus text-lg"></i>
+            </button>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

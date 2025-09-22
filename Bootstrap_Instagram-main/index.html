@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title>Web Bootstrap</title>
+</head>
+
+<body class="body">
+
+    <!-- Nav-->
+    <header>
+        <nav class="navbar navbar-light nav-top">
+            <div class="container-fluid nav-container">
+                <a class="navbar-brand" href="https://www.instagram.com/cs_go_shinigami/" target="_blank"><img
+                        src="images/logo.jpg" style=" max-width:130px; 
+                    max-height:80px"></a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pencarian" aria-label="Search">
+                </form>
+                <div style="width: 30%;">
+                    <i class="bi bi-house-door icons"></i>
+                    <i class="bi bi-inbox icons"></i>
+                    <i class="bi bi-compass icons"></i>
+                    <i class="bi bi-heart icons"></i>
+                    <img class="img-nav" src="images/jahira.jpg">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- ...existing code... -->
+<div class="container">
+    <div class="row py-4 align-items-center">
+        <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+            <img class="img-profile img-fluid rounded-circle" src="images/jahira.jpg" alt="Profile Image">
+        </div>
+        <div class="col-12 col-md-7">
+            <div class="row align-items-center mb-2">
+                <div class="col-8 col-lg-5">
+                    <h2 class="username mb-0">salwahiira</h2>
+                </div>
+                <div class="col-4 col-lg-6 text-end">
+                    <button type="button" class="btn btn-outline-secondary button-edit">Edit Profile</button>
+                </div>
+            </div>
+            <div class="row text-center text-md-start mb-2">
+                <div class="col-4">
+                    <p class="profile-datas mb-0"><strong>3</strong> posts</p>
+                </div>
+                <div class="col-4">
+                    <p class="profile-datas mb-0"><strong>1,347</strong> followers</p>
+                </div>
+                <div class="col-4">
+                    <p class="profile-datas mb-0"><strong>991</strong> following</p>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h1 class="name"></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="profile-desc fw-bold mb-0">zahira</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-md-block col-md-2"></div>
+    </div>
+</div>
+<!-- ...existing code... -->
+
+                    <!-- Stories-->
+                    <div style="padding-top: 0px;">
+                        <div class="row">
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 40px;">
+                        <div class="row">
+                        </div>
+                    </div>
+
+                    <!-- Line-->
+                    <hr size="3" width="100%" color="#EEEEEE" style="margin: 0%;">
+
+                    <!-- Nav-Feed-->
+                    <ul class="nav nav-tabs nav-feed" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active nav-link-1" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true"><i class="bi bi-grid-3x3"></i> PUBLICATION </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link nav-link-2" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false"><i class="bi bi-file-person"></i> TAGGING </a>
+                        </li>
+                    </ul>
+
+                    <!-- Card-Feed-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row" style="padding-bottom: 25px;">
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="foto 2.jpg" class="card-img-top" alt="Post 1">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="foto 1.jpg" class="card-img-top" alt="Post 2">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="foto 3.jpg" class="card-img-top" alt="Post 3">
+                                    </div>  
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                    </div>
+                </div>
+                <div class="col-0 col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+
+        var crl = document.getElementById('myCrl').getContext('2d');
+
+        crl.beginPath();
+        crl.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl.fillStyle = '#00ACC1';
+        crl.fill();
+        crl.linewidth = 5;
+        crl.strokeStyle = '#dbdbdb';
+        crl.stroke();
+
+        var crl1 = document.getElementById('myCrl1').getContext('2d');
+
+        crl1.beginPath();
+        crl1.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl1.fillStyle = '#4B0082';
+        crl1.fill();
+        crl1.linewidth = 5;
+        crl1.strokeStyle = '#dbdbdb';
+        crl1.stroke();
+
+        var crl2 = document.getElementById('myCrl2').getContext('2d');
+
+        crl2.beginPath();
+        crl2.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl2.fillStyle = '#E91E63';
+        crl2.fill();
+        crl2.linewidth = 5;
+        crl2.strokeStyle = '#dbdbdb';
+        crl2.stroke();
+
+        var crl3 = document.getElementById('myCrl3').getContext('2d');
+
+        crl3.beginPath();
+        crl3.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl3.fillStyle = '#DA70D6';
+        crl3.fill();
+        crl3.linewidth = 5;
+        crl3.strokeStyle = '#dbdbdb';
+        crl3.stroke();
+
+        var crl4 = document.getElementById('myCrl4').getContext('2d');
+
+        crl4.beginPath();
+        crl4.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl4.fillStyle = '#FFFF00';
+        crl4.fill();
+        crl4.linewidth = 5;
+        crl4.strokeStyle = '#dbdbdb';
+        crl4.stroke();
+
+        var crl5 = document.getElementById('myCrl5').getContext('2d');
+
+        crl5.beginPath();
+        crl5.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl5.fillStyle = '#ADFF2F';
+        crl5.fill();
+        crl5.linewidth = 5;
+        crl5.strokeStyle = '#dbdbdb';
+        crl5.stroke();
+
+    </script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
